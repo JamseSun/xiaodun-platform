@@ -44,8 +44,8 @@ $("#search-form").submit(function(){
 })
 function chkform(){
     var addform= document.queryform;
-    if (addform.query.placeholder=="请输入关键字..."){
-        $("#remind").html("<span><font color='red'>搜索内容不能为空！</font></span>");
+    if (addform.query.value=="" || addform.query.placeholder=="请输入关键字..."){
+        $("#remind").html("<p><strong>搜索内容不能为空！</strong></p>");
         return false;
     }
     return True;
@@ -62,9 +62,13 @@ function chkform(){
        <nav>
         <form name="queryform" class="search-container search" id="search-form" action="/courses" method="get" onsubmit="return chkform();" >
           <!--<input type="text" id="search-query" name="query"  onfocus="if (value =='请输入关键字...'){value =''}" onblur="if (value ==''){value='请输入关键字...'}" value="">-->
-          <input type="text" id="search-query" name="query"  onfocus="if (placeholder =='请输入关键字...'){placeholder =''}" onblur="if (placeholder ==''){placeholder='请输入关键字...'}" value="">
-          <input type="submit" value="搜索">
-          <div id="remind"></div>
+          <table>
+              <tr>
+                  <td><div id="remind"></div></td>
+                  <td><input type="text" id="search-query" name="query"  onfocus="if (placeholder =='请输入关键字...'){placeholder =''}" onblur="if (placeholder ==''){placeholder='请输入关键字...'}" value=""></td>
+                  <td><input type="submit" value="搜索"></td>
+              </tr>
+          </table>
         </form>
        </nav>
     </section>

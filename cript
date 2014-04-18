@@ -3283,7 +3283,7 @@ Binary files a/cms/static/img/homepage-bg.jpg and b/cms/static/img/homepage-bg.j
  #: lms/djangoapps/course_wiki/views.py[m
  msgid "Visit a course wiki to add an article."[m
 [31m-msgstr ""[m
-[32m+[m[32mmsgstr "浏览课程维基添加课程标题"[m
+[32m+[m[32mmsgstr "浏览课程资料添加课程标题"[m
  [m
  #. Translators: 'Course Content' refers to the tab in the courseware[m
  #. that leads to the content of a course[m
@@ -12473,7 +12473,7 @@ Binary files a/cms/static/img/homepage-bg.jpg and b/cms/static/img/homepage-bg.j
  "The names of your Static Pages appear in your course's main navigation bar, "[m
  "along with Courseware, Course Info, Discussion, Wiki, and Progress."[m
 [31m-msgstr ""[m
-[32m+[m[32mmsgstr "您的静态页面名字将会在课程主页导航栏中显示，与课件，课程信息，讨论，维基和进度一起。"[m
+[32m+[m[32mmsgstr "您的静态页面名字将会在课程主页导航栏中显示，与课件，课程信息，讨论，资料和进度一起。"[m
  [m
  #: cms/templates/edit-tabs.html cms/templates/howitworks.html[m
  #: cms/templates/howitworks.html cms/templates/howitworks.html[m
@@ -15114,7 +15114,7 @@ Binary files a/cms/static/img/homepage-bg.jpg and b/cms/static/img/homepage-bg.j
  #: common/lib/xmodule/xmodule/course_module.py:490[m
  #: lms/djangoapps/course_wiki/views.py:129 lms/templates/wiki/base.html:4[m
  msgid "Wiki"[m
-[31m-msgstr "维基"[m
+[31m-msgstr "资料"[m
 [32m+[m[32mmsgstr "资料"[m
  [m
  #. Translators: "Progress" is the title of the student's grade information[m
@@ -15139,7 +15139,7 @@ Binary files a/conf/locale/zh_CN/LC_MESSAGES/django.mo and b/conf/locale/zh_CN/L
  #: common/lib/xmodule/xmodule/course_module.py[m
  #: lms/djangoapps/course_wiki/views.py lms/templates/wiki/base.html[m
  msgid "Wiki"[m
-[31m-msgstr "维基"[m
+[31m-msgstr "资料"[m
 [32m+[m[32mmsgstr "资料"[m
  [m
  #. #-#-#-#-#  django-partial.po (edx-platform)  #-#-#-#-#[m
@@ -15188,7 +15188,7 @@ Binary files a/conf/locale/zh_CN/LC_MESSAGES/django.mo and b/conf/locale/zh_CN/L
  msgid ""[m
  "The names of your Static Pages appear in your course's main navigation bar, "[m
  "along with Courseware, Course Info, Discussion, Wiki, and Progress."[m
-[31m-msgstr "您的静态页面名字将会在课程主页导航栏中显示，与课件，课程信息，讨论，维基和进度一起。"[m
+[31m-msgstr "您的静态页面名字将会在课程主页导航栏中显示，与课件，课程信息，讨论，资料和进度一起。"[m
 [32m+[m[32mmsgstr "您的静态页面名字将会在课程主页导航栏中显示，与课件，更新，讨论，资料和进度一起。"[m
  [m
  #: cms/templates/edit-tabs.html cms/templates/howitworks.html[m
@@ -15230,7 +15230,7 @@ Binary files a/conf/locale/zh_CN/LC_MESSAGES/django.mo and b/conf/locale/zh_CN/L
  msgid ""[m
  "The names of your Static Pages appear in your course's main navigation bar, "[m
  "along with Courseware, Course Info, Discussion, Wiki, and Progress."[m
-[31m-msgstr "您的静态页面名字将会在课程主页导航栏中显示，与课件，课程信息，讨论，维基和进度一起。"[m
+[31m-msgstr "您的静态页面名字将会在课程主页导航栏中显示，与课件，课程信息，讨论，资料和进度一起。"[m
 [32m+[m[32mmsgstr "您的静态页面名字将会在课程主页导航栏中显示，与课件，更新，讨论，资料和进度一起。"[m
  [m
  #: cms/templates/edit-tabs.html:92 cms/templates/howitworks.html:161[m
@@ -15314,7 +15314,8 @@ Binary files a/conf/locale/zh_CN/LC_MESSAGES/django.mo and b/conf/locale/zh_CN/L
  .fall-body ul h2 {color:#333333; font-size:16px; font-weight:normal; line-height:20px;}[m
  .fall-body ul.click {background:#eeeeee;}[m
 [31m-.class_title {height:70px; font-size:24px; color:#FFFFFF; padding:0 10px; text-align:center; line-height:70px; background:url(images/class_pre.png) left center no-repeat #ff7200;}[m
-[32m+[m[32m.class_title {height:70px; font-size:24px; color:#FFFFFF; padding:0 10px; text-align:center; line-height:70px; background: left center no-repeat #ff7200;}[m[41m[m
+[32m+[m[32m.class_title {height:70px; font-size:24px; color:#FFFFFF; padding:0 10px; text-align:center; line-height:70px; background: left center no-repeat #ff7200;}[m[41m
+[m
  .class_m20 {margin:20px;}[m
  .img-board {margin:15px 5px; padding:0;}[m
  .img-board img {width:100%; height:300px;}[m
@@ -15326,9 +15327,12 @@ Binary files a/conf/locale/zh_CN/LC_MESSAGES/django.mo and b/conf/locale/zh_CN/L
 [31m-.ott .ok {background:url(images/ok.png) no-repeat; width:158px; height:49px; color:#FFFFFF; text-align:center; font-size:20px; line-height:49px; cursor:pointer; float:left;}[m
 [31m-.ott .but {height:60px; text-align:center; padding-left:60px;}[m
 \ No newline at end of file[m
-[32m+[m[32m.ott .but {width: 100%; height:60px; text-align:center; padding-left:60px;}[m[41m[m
-[32m+[m[32m.ott .cancel {border-radius: 10px; background-color: #CCC; width:30%; height:49px; color:#000000; text-align:center; font-size:20px; line-height:49px; cursor:pointer; float:left; margin-right:10px;}[m[41m[m
-[32m+[m[32m.ott .ok {border-radius: 10px; background-color: #FF8000; width:30%; height:49px; color:#FFFFFF; text-align:center; font-size:20px; line-height:49px; cursor:pointer; float:left;}[m[41m[m
+[32m+[m[32m.ott .but {width: 100%; height:60px; text-align:center; padding-left:60px;}[m[41m
+[m
+[32m+[m[32m.ott .cancel {border-radius: 10px; background-color: #CCC; width:30%; height:49px; color:#000000; text-align:center; font-size:20px; line-height:49px; cursor:pointer; float:left; margin-right:10px;}[m[41m
+[m
+[32m+[m[32m.ott .ok {border-radius: 10px; background-color: #FF8000; width:30%; height:49px; color:#FFFFFF; text-align:center; font-size:20px; line-height:49px; cursor:pointer; float:left;}[m[41m
+[m
 [41m+[m
 [1mdiff --git a/lms/static/images/homepage-bg.jpg b/lms/static/images/homepage-bg.jpg[m
 [1mold mode 100755[m
@@ -15345,17 +15349,26 @@ Binary files a/lms/static/images/homepage-bg.jpg and b/lms/static/images/homepag
 [31m-	var ratebarOptions = 0;[m
 [31m-	ratebarPresent = getRatebarPresent();[m
 [31m-	setRatebar(ratebarPresent);[m
-[32m+[m[32m var ratebarOptions = [];[m[41m[m
-[32m+[m[32m var oRates = $(".ratebar");//alert(oRates.length);[m[41m[m
-[32m+[m[32m oRates.each(function(){[m[41m[m
-[32m+[m[32m  //ratebarOptions.push($(this).attr("_rate"));[m[41m[m
-[32m+[m[32m  //alert($(this).attr("_rate"));[m[41m[m
-[32m+[m[32m  setRatebar($(this), $(this).attr("_rate"));[m[41m[m
-[32m+[m[32m    });[m[41m[m
-[32m+[m[41m [m
+[32m+[m[32m var ratebarOptions = [];[m[41m
+[m
+[32m+[m[32m var oRates = $(".ratebar");//alert(oRates.length);[m[41m
+[m
+[32m+[m[32m oRates.each(function(){[m[41m
+[m
+[32m+[m[32m  //ratebarOptions.push($(this).attr("_rate"));[m[41m
+[m
+[32m+[m[32m  //alert($(this).attr("_rate"));[m[41m
+[m
+[32m+[m[32m  setRatebar($(this), $(this).attr("_rate"));[m[41m
+[m
+[32m+[m[32m    });[m[41m
+[m
+[32m+[m[41m 
+[m
  });[m
 [31m-function getRatebarPresent()[m
-[32m+[m[32mfunction setRatebar(obj, rate)[m[41m[m
+[32m+[m[32mfunction setRatebar(obj, rate)[m[41m
+[m
  {[m
 [31m-	var present = 0;[m
 [31m-	present = $("#ratebar").attr("_rate");//alert(present);[m
@@ -15378,20 +15391,34 @@ Binary files a/lms/static/images/homepage-bg.jpg and b/lms/static/images/homepag
 [31m-		$("#ratebar-box-present").css("left",present+"%");[m
 [31m-	};[m
 [31m-};[m
-[32m+[m[32m $(obj).find(".ratebar-box-orange").css("width",rate+"%");[m[41m[m
-[32m+[m[32m $(obj).find(".ratebar-box-present").text(rate+"%");[m[41m[m
-[32m+[m[32m $(obj).find(".ratebar-box-dot").css("left",rate+"%");[m[41m[m
-[32m+[m[32m if(rate>=50)[m[41m[m
-[32m+[m[32m {//alert(present);[m[41m[m
-[32m+[m[32m  //var ll = $("#ratebar-box-line").width();alert(ll);[m[41m[m
-[32m+[m[32m  var ol = $(obj).find(".ratebar-box-orange").width();//alert(ol);[m[41m[m
-[32m+[m[32m  var pl = $(obj).find(".ratebar-box-present").width();//alert(pl);[m[41m[m
-[32m+[m[32m  $(obj).find(".ratebar-box-present").css("left",(ol-pl+10)+"px");[m[41m[m
-[32m+[m[32m }[m[41m[m
-[32m+[m[32m else[m[41m[m
-[32m+[m[32m {//alert(rate);[m[41m[m
-[32m+[m[32m  $(obj).find(".ratebar-box-present").css("left",rate+"%");[m[41m[m
-[32m+[m[32m };[m[41m[m
+[32m+[m[32m $(obj).find(".ratebar-box-orange").css("width",rate+"%");[m[41m
+[m
+[32m+[m[32m $(obj).find(".ratebar-box-present").text(rate+"%");[m[41m
+[m
+[32m+[m[32m $(obj).find(".ratebar-box-dot").css("left",rate+"%");[m[41m
+[m
+[32m+[m[32m if(rate>=50)[m[41m
+[m
+[32m+[m[32m {//alert(present);[m[41m
+[m
+[32m+[m[32m  //var ll = $("#ratebar-box-line").width();alert(ll);[m[41m
+[m
+[32m+[m[32m  var ol = $(obj).find(".ratebar-box-orange").width();//alert(ol);[m[41m
+[m
+[32m+[m[32m  var pl = $(obj).find(".ratebar-box-present").width();//alert(pl);[m[41m
+[m
+[32m+[m[32m  $(obj).find(".ratebar-box-present").css("left",(ol-pl+10)+"px");[m[41m
+[m
+[32m+[m[32m }[m[41m
+[m
+[32m+[m[32m else[m[41m
+[m
+[32m+[m[32m {//alert(rate);[m[41m
+[m
+[32m+[m[32m  $(obj).find(".ratebar-box-present").css("left",rate+"%");[m[41m
+[m
+[32m+[m[32m };[m[41m
+[m
 [32m+[m[32m};[m
 \ No newline at end of file[m
 [1mdiff --git a/lms/static/js/toggle_login_modal.js b/lms/static/js/toggle_login_modal.js[m
