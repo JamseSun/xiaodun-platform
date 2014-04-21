@@ -6363,7 +6363,7 @@ msgstr "您最近在{section_link}。如果您已经完成此章节，请选择�
 msgid ""
 "Final course details are being wrapped up at this time. Your final standing "
 "will be available shortly."
-msgstr "最终课程细节目前正在被封闭。您很快就能看到最终名次。"
+msgstr "该课程已经结束。感谢您的参与。"
 
 #: lms/templates/dashboard/_dashboard_certificate_information.html
 msgid "Your final grade:"

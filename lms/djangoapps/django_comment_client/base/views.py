@@ -826,16 +826,19 @@ def upload(request, course_id):  # ajax upload file to a question or answer
 
         # generate new file name
         new_file_name = str(time.time()).replace('.', str(random.randint(0, 100000))) + file_extension
-
         file_storage = get_storage_class()()
+        print "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+        print file_storage
         # use default storage to store file
         file_storage.save(new_file_name, f)
         # check file size
         # byte
         size = file_storage.size(new_file_name)
+        print size
+
         if size > cc_settings.MAX_UPLOAD_FILE_SIZE:
             file_storage.delete(new_file_name)
-            msg = _("maximum upload file size is %(file_size)sK") % \
+            msg = _("maximum upload file size is %(file_size)s K") % \
                 {'file_size': cc_settings.MAX_UPLOAD_FILE_SIZE}
             raise exceptions.PermissionDenied(msg)
 

@@ -177,11 +177,11 @@ require(["jquery", "underscore", "gettext", "js/views/feedback_prompt"],
       var email = $('#user-email-input').val().trim();
       if(!email) {
         var msg = new PromptView.Error({
-          title: gettext("A valid email address is required"),
-          message: gettext("You must enter a valid email address in order to add a new team member"),
+          title: gettext("需要一个可用的Email地址！"),
+          message: gettext("你必须输入一个有效的Email地址来创建新的课程团队！"),
           actions: {
             primary: {
-              text: gettext("Return and add email address"),
+              text: gettext("返回并添加Email地址"),
               click: function(view) {
                 view.hide();
                 $("#user-email-input").focus();
@@ -194,11 +194,11 @@ require(["jquery", "underscore", "gettext", "js/views/feedback_prompt"],
       }
       if(_.contains(staffEmails, email)) {
         var msg = new PromptView.Warning({
-          title: gettext("Already a course team member"),
-          message: _.template(gettext("{email} is already on the “{course}” team. If you're trying to add a new member, please double-check the email address you provided."), {email: email, course: course.escape('name')}, {interpolate: /\{(.+?)\}/g}),
+          title: gettext("课程团队已经存在！"),
+          message: _.template(gettext("{email} 已经存在与“{course}” 团队. 如果你想创建新的课程团队，请输入不同的Email地址！"), {email: email, course: course.escape('name')}, {interpolate: /\{(.+?)\}/g}),
           actions: {
             primary: {
-              text: gettext("Return to team listing"),
+              text: gettext("返回课程团队列表"),
               click: function(view) {
                 view.hide();
                 $("#user-email-input").focus();
