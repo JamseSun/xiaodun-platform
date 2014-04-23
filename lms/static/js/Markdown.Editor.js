@@ -1065,7 +1065,7 @@
             dialog = doc.createElement("div");
             dialog.setAttribute("role", "dialog");
             dialog.className = "wmd-prompt-dialog";
-            dialog.style.padding = "10px;";
+            dialog.style.padding = "20px;";
             dialog.style.position = "fixed";
             dialog.style.width = "400px";
             dialog.style.zIndex = "1001";

@@ -207,14 +207,14 @@ class CourseFields(object):
                               },
                               {
                                   "type": "Midterm Exam",
-                                  "short_label": "Midterm",
+                                  "short_label": "期中",
                                   "min_count": 1,
                                   "drop_count": 0,
                                   "weight": 0.3
                               },
                               {
                                   "type": "Final Exam",
-                                  "short_label": "Final",
+                                  "short_label": "期末",
                                   "min_count": 1,
                                   "drop_count": 0,
                                   "weight": 0.4

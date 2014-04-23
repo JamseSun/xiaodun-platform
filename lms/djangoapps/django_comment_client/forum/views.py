@@ -472,7 +472,6 @@ def single_thread(request, course_id, discussion_id, thread_id):
             'user_cohort': get_cohort_id(request.user, course_id),
             'cohorted_commentables': cohorted_commentables
         }
-
         return render_to_response('discussion/index.html', context)
 
 

@@ -285,6 +285,11 @@ class @DiscussionUtil
   @stripLatexHighlight: (text) ->
     @processEachMathAndCode text, @stripHighlight
 
+  @chkFormEmptyErrorHandler: (errorsField) ->
+    errorsField.empty().show();
+    return errorsField.append($("<li>").addClass("new-post-form-error").html("内容不能为空"))
+
+
   @markdownWithHighlight: (text) ->
     text = text.replace(/^\&gt\;/gm, ">")
     converter = Markdown.getMathCompatibleConverter()

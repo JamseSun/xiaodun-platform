@@ -143,7 +143,6 @@ def create_thread(request, course_id, commentable_id):
 @login_required
 @csrf_exempt
 def mobi_thread_handler(request, course_id, thread_id, action=None):
-    print "--------------------------in handler-----------------------------------"
     request_method = request.method
     try:
         if request_method == 'GET':
@@ -338,10 +337,9 @@ def _create_comment(request, course_id, thread_id=None, parent_id=None):
     called from create_comment to do the actual creation
     """
     post = request.POST
-
+    comment = cc.Comment(**extract(post, ['body']))
     if 'body' not in post or not post['body'].strip():
         return JsonError(_("Body can't be empty"))
-    comment = cc.Comment(**extract(post, ['body']))
 
     course = get_course_with_access(request.user, course_id, 'load')
     if course.allow_anonymous:
@@ -827,8 +825,6 @@ def upload(request, course_id):  # ajax upload file to a question or answer
         # generate new file name
         new_file_name = str(time.time()).replace('.', str(random.randint(0, 100000))) + file_extension
         file_storage = get_storage_class()()
-        print "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-        print file_storage
         # use default storage to store file
         file_storage.save(new_file_name, f)
         # check file size

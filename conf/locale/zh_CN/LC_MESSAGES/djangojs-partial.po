@@ -1056,7 +1056,7 @@ msgid ""
 "<p><b>Insert Image (upload file or type "
 "url)</b></p><p>http://example.com/images/diagram.jpg \"optional "
 "title\"<br><br></p>"
-msgstr "<p><b>插入图片（上传文件或输入地址）</b></p><p>http://example.com/images/diagram.jpg \"可选标题\"<br><br></p>"
+msgstr "<p><b>插入图片（上传文件或输入地址）</b></p><p>http://example.com/images/diagram.jpg \"可选标题\"<br /><br /></p>"
 
 #: lms/static/js/Markdown.Editor.js:38
 msgid "Markdown Editing Help"

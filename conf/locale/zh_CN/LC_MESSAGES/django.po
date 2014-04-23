@@ -6366,7 +6366,7 @@ msgstr "您最近在{section_link}。如果您已经完成此章节，请选择�
 msgid ""
 "Final course details are being wrapped up at this time. Your final standing "
 "will be available shortly."
-msgstr "课程已经结束。"
+msgstr "该课程已经结束。感谢您的参与。"
 
 #: lms/templates/dashboard/_dashboard_certificate_information.html
 msgid "Your final grade:"
@@ -10855,7 +10855,7 @@ msgstr "删除当前视频"
 
 #: cms/templates/settings.html
 msgid "Enter your YouTube video's ID (along with any restriction parameters)"
-msgstr "请输入您的视频地址(目前只支持mp4格式视频播放)"
+msgstr "请输入您的视频地址(目前只支持mp4视频播放格式)"
 
 #: cms/templates/settings.html
 msgid "Requirements"
@@ -11466,7 +11466,7 @@ msgstr ""
 
 #: wiki/forms.py
 msgid "A slug named \"%s\" already exists."
-msgstr "资源\"%s\ 已经存在。"
+msgstr "资源\"%s\" 已经存在。"
 
 #: wiki/forms.py
 msgid "Yes, I am sure"

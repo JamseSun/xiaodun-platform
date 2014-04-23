@@ -7,6 +7,7 @@ if Backbone?
     events:
       "click .discussion-submit-post": "submitComment"
       "click .add-response-btn": "scrollToAddResponse"
+      "click .discussion-submit-comment": "submitPost"
 
     $: (selector) ->
       @$el.find(selector)
@@ -152,7 +153,38 @@ if Backbone?
       event.preventDefault()
       url = @model.urlFor('reply')
       body = @getWmdContent("reply-body")
-      return if not body.trim().length
+
+      if not body.trim().length
+        DiscussionUtil.chkFormEmptyErrorHandler(this.$(".discussion-reply-new").children("ul.discussion-errors"));
+        return
+
+      @setWmdContent("reply-body", "")
+      comment = new Comment(body: body, created_at: (new Date()).toISOString(), username: window.user.get("username"), votes: { up_count: 0 }, abuse_flaggers:[], endorsed: false, user_id: window.user.get("id"))
+      comment.set('thread', @model.get('thread'))
+      @renderResponse(comment)
+      @model.addComment()
+      @renderAddResponseButton()
+
+      DiscussionUtil.safeAjax
+        $elem: $(event.target)
+        url: url
+        type: "POST"
+        dataType: 'json'
+        data:
+          body: body
+        success: (data, textStatus) =>
+          comment.updateInfo(data.annotated_content_info)
+          comment.set(data.content)
+
+    submitPost: (event) ->
+      event.preventDefault()
+      url = @model.urlFor('reply')
+      body = @getWmdContent("reply-body")
+
+      if not body.trim().length
+        DiscussionUtil.chkFormEmptyErrorHandler(this.$(".comment-form").children("ul.discussion-errors"));
+        return
+
       @setWmdContent("reply-body", "")
       comment = new Comment(body: body, created_at: (new Date()).toISOString(), username: window.user.get("username"), votes: { up_count: 0 }, abuse_flaggers:[], endorsed: false, user_id: window.user.get("id"))
       comment.set('thread', @model.get('thread'))
